@@ -6,10 +6,15 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Convert App");
         double kgs = 5;
+        double pnds = 12;
         double pounds = convKgsToPound(kgs);
-        System.out.println("Result is " + pounds + " pounds.");
+        double kilos = convKgsToPound(pnds);
+        System.out.println("Result is " + pounds + " pounds and " + kilos + " kgs.");
     }
     private static double convKgsToPound(double kgs){
         return kgs*CONV_K;
+    }
+    private static doubleconvPoundToKilos(double pnds){
+        return pnds/CONV_K;
     }
 }
